@@ -1,20 +1,54 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# FilmHub (فیلم هاب) - AI Powered Movie Database
 
-# Run and deploy your AI Studio app
+FilmHub is a fully automated, client-side movie database application tailored for Persian (Farsi) speakers. It combines real-time data from **TMDB (The Movie Database)** with the generative power of **Google Gemini 2.0 AI** to create unique, localized content and reviews.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/11yn0OoXmku55DGtnm_zUrRogUsMeBgiU
+*   **Hybrid Data Engine:** Fetches hard data (Cast, Year, Poster) from TMDB and enriches it with AI-generated Farsi reviews and summaries.
+*   **Smart Localization:** Automatically translates and culturally adapts movie overviews.
+*   **Client-Side Architecture:** Built with React 19 and Vite, running entirely in the browser with no backend server required.
+*   **Virtual Admin:** An automated "bot" that simulates indexing movies to populate the database over time.
+*   **Watchlist:** LocalStorage-based persistence for user favorites.
 
-## Run Locally
+## 🛠 Tech Stack
 
-**Prerequisites:**  Node.js
+*   **Framework:** React 19 + TypeScript + Vite
+*   **Styling:** Tailwind CSS (CDN)
+*   **AI Model:** Google Gemini 2.0 Flash Exp (@google/genai)
+*   **Data Source:** TMDB API
 
+## 📦 Installation & Setup
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/filmhub.git
+    cd filmhub
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Set up Environment Variables:**
+    Create a `.env` file in the root directory and add your Google Gemini API Key:
+    ```env
+    API_KEY=your_google_gemini_api_key_here
+    ```
+
+4.  **Run Development Server:**
+    ```bash
+    npm run dev
+    ```
+
+## 🚀 Deployment
+
+This project is optimized for deployment on **Vercel**.
+
+1.  Push your code to GitHub.
+2.  Import the project in Vercel.
+3.  **Crucial:** Add `API_KEY` to the **Environment Variables** section in Vercel settings.
+4.  Deploy!
+
+---
+*Powered by Google Gemini & TMDB*
